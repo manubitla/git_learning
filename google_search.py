@@ -17,3 +17,26 @@ sample_data = sample_data * 2
 df = pandas.DataFrame(sample_data)
 df.to_csv("multiplier.csv")
 
+# Question: Please concatenate "https://pythonhow.com/media/data/sampledata.txt" file with
+# "https://pythonhow.com/media/data/sampledata_x_2.txt" one to a single text file.
+
+df1 = pandas.read_csv("https://pythonhow.com/media/data/sampledata.txt")
+df2 = pandas.read_csv("https://pythonhow.com/media/data/sampledata_x_2.txt")
+merged_df = pandas.concat([df1, df2], ignore_index=True)
+merged_df.to_csv("merged_data.txt")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
